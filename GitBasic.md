@@ -84,7 +84,7 @@ git restore --staged .
 //Change to [Path]
 cd /[Path]
 
-//Example: Change current path into C:\\myGit\\
+//Example: Change current path into C:\myGit\
 cd /c/myGit/
 ```
 
