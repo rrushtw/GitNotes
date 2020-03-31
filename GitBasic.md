@@ -79,6 +79,15 @@ git restore --staged .
 ## Deal with list
 1. press "q" to exit
 
+## Change folder with git bash
+```bash
+//Change to [Path]
+cd /[Path]
+
+//Example: Change current path into C:\myGit\
+cd /c/myGit/
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
