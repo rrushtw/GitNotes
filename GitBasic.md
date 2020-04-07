@@ -61,6 +61,12 @@ git restore --staged .
 | `git pull` | Update local repository to the newest commit |
 | `git pull origin [branch name]` | Pull changes from remote repository |
 
+### Undo
+| Command | Description |
+| ------- | ----------- |
+| `git tag -d [tagname]` | Delete a local tag |
+| `git reset --hard [ID]` | Discard all change to this commit |
+
 ### Inspection & Comparison
 | Command | Description |
 | ------- | ----------- |
