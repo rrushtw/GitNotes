@@ -6,8 +6,8 @@ Use git commands to check history with GUI
 | ------- | ----------- |
 | `git gui` | Open GUI |
 | `gitk --all` | Show all refs (branches, tags, etc.) |
-| `gitk --since<date>` | Show commits after the date |
-| `gitk --until<date>` | Show commits before the date |
+| `gitk --since="datetime"` | Show commits after the datetime |
+| `gitk --until="datetime"` | Show commits before the datetime |
 | `gitk --date-order` | Sort commits by date |
 
 ## Contributing
