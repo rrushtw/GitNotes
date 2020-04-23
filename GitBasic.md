@@ -63,7 +63,7 @@ git checkout -b [New branch] [branch name]
 | `git branch -d [branch name]` | Delete a branch |
 | `git push origin --delete [branch name]` | Delete a remote branch |
 ```bash
-//Delete a branch which doesn\'t exist but show in list
+//Delete a branch which doesn't exist but show in list
 git branch -rd [branch name]
 ```
 
