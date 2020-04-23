@@ -37,19 +37,35 @@ git restore --staged .
 | ------- | ----------- |
 | `git branch` | List branches (the asterisk denotes the current branch) |
 | `git branch -a` | List all branches (local and remote) |
-| `git branch [branch name]` | Create a new branch base on current branch |
-| `git branch -d [branch name]` | Delete a branch |
 | `git rebase [branch name]` | Rebase current branch onto a branch |
-| `git push origin --delete [branch name]` | Delete a remote branch |
-| `git checkout -b [branch name]` | Create a new branch and switch to it |
-| `git checkout -b [branch name] origin/[branch name]` | Clone a remote branch and switch to it |
 | `git branch -m [old branch name] [new branch name]` | Rename a local branch |
 | `git checkout [branch name]` | Switch to a branch |
 | `git checkout -` | Switch to the branch last checked out |
-| `git merge [branch name]` | Merge a branch into the active branch |
-| `git merge [source branch] [target branch]` | Merge a branch into a target branch |
+| `git merge (--no-ff) [branch name]` | Merge a branch into the active branch |
+| `git merge (--no-ff) [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
+
+### Create Branch
+| Command | Description |
+| ------- | ----------- |
+| `git branch [branch name]` | Create a new branch base on current branch |
+| `git checkout -b [branch name]` | Create a new branch and switch to it |
+| `git checkout -b [branch name] origin/[branch name]` | Clone a remote branch and switch to it |
+```bash
+//Create a new branch base on [branch name] which default is current branch
+git checkout -b [New branch] [branch name]
+```
+
+### Delete Branch
+| Command | Description |
+| ------- | ----------- |
+| `git branch -d [branch name]` | Delete a branch |
+| `git push origin --delete [branch name]` | Delete a remote branch |
+```bash
+//Delete a branch which doesn\'t exist but show in list
+git branch -rd [branch name]
+```
 
 ### Sharing & Updating Projects
 | Command | Description |
@@ -66,6 +82,7 @@ git restore --staged .
 | ------- | ----------- |
 | `git tag -d [tagname]` | Delete a local tag |
 | `git reset --hard [ID]` | Discard all change to this commit |
+| `git reset --soft [ID]` | Keep all change and reset onto this commit |
 
 ### Inspection & Comparison
 | Command | Description |
