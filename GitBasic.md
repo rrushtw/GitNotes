@@ -7,6 +7,14 @@ Here is my notes while learning Git
 | `git clone https://github.com/[username]/[repository-name].git` | Clone with HTTPS |
 | `git clone git@github.com:[username]/[repository-name].git` | Clone with SSH |
 
+```bash
+//WARNING: First commit your current changes, or you will lose them.
+//Then run the following commands from the top folder of your Git repository:
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+```
+
 ### Basic Snapshotting
 | Command | Description |
 | ------- | ----------- |
@@ -118,6 +126,7 @@ Please make sure to update tests as appropriate.
 
 ## Credit
 [Joshnh/Git-Commands](https://github.com/joshnh/Git-Commands)
+[gitignore](https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
