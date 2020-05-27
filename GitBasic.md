@@ -81,7 +81,7 @@ git branch -rd [branch name]
 | `git push origin [branch name]` | Push a branch to your remote repository |
 | `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
 | `git push` | Push changes to remote repository (remembered branch) |
-| `git push origin --delete [branch name]` | Delete a remote branch |
+| `git push origin --tags` | Push all tags to remote |
 | `git pull` | Update local repository to the newest commit |
 | `git pull origin [branch name]` | Pull changes from remote repository |
 
@@ -89,6 +89,7 @@ git branch -rd [branch name]
 | Command | Description |
 | ------- | ----------- |
 | `git tag -d [tagname]` | Delete a local tag |
+| `git push origin --delete [tagname]` | Delete a remote tag |
 | `git reset --hard [ID]` | Discard all change to this commit |
 | `git reset --soft [ID]` | Keep all change and reset onto this commit |
 
