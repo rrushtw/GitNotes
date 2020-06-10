@@ -6,6 +6,8 @@ Here is my notes while learning Git
 | ------- | ----------- |
 | `git clone https://github.com/[username]/[repository-name].git` | Clone with HTTPS |
 | `git clone git@github.com:[username]/[repository-name].git` | Clone with SSH |
+| `git remote set-url origin [https/ssh]` | Update link |
+| `git remote set-url --push origin [https/ssh]` | Update push link |
 
 ```bash
 //WARNING: First commit your current changes, or you will lose them.
