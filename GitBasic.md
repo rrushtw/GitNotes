@@ -122,6 +122,15 @@ cd /[Path]
 cd /c/myGit/
 ```
 
+## Set UTF-8 display for git
+```bash
+// Global setting for all you repositories
+git config --global gui.encoding utf-8
+
+// For one repository only
+git config gui.encoding utf-8
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -130,6 +139,7 @@ Please make sure to update tests as appropriate.
 ## Credit
 [Joshnh/Git-Commands](https://github.com/joshnh/Git-Commands)
 [gitignore](https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git)
+[UTF-8](https://stackoverflow.com/questions/23151339/set-utf-8-display-for-git-gui-differences-window)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
